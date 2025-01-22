@@ -1,13 +1,15 @@
 <script >
 // import HelloWorld from './components/HelloWorld.vue';
 import InputFiledLifeCycleHook from './components/InputFiled&LifeCycleHook.vue';
+import OneCheckBoxRed from './components/OneCheckBoxRed.vue';
 import Test from './components/Test.vue';
 
 export default {
   name: "app",
   components: {
     Test,
-    InputFiledLifeCycleHook
+    InputFiledLifeCycleHook,
+    OneCheckBoxRed
 // HelloWorld
 
   }
@@ -54,7 +56,7 @@ export default {
 
     </button> -->
 <!-- <Test /> -->
-<InputFiledLifeCycleHook />
+<OneCheckBoxRed />
 <!-- <HelloWorld /> -->
 </template>
 

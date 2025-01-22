@@ -9,14 +9,6 @@ export default {
        
     },
 
-    // computed: {
-    //     date() {
-    //         return new Date().toLocaleString()
-
-    //     }
-       
-    // },
-
 
     // Life Cycle Method
     created: function(){
