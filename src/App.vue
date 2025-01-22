@@ -1,5 +1,16 @@
-<script setup>
-import { onMounted, ref } from 'vue';
+<script >
+// import HelloWorld from './components/HelloWorld.vue';
+import Test from './components/Test.vue';
+
+export default {
+  name: "app",
+  components: {
+    Test,
+// HelloWorld
+
+  }
+}
+// import { onMounted, ref } from 'vue';
 
 // Options API
 // export default {
@@ -21,26 +32,27 @@ import { onMounted, ref } from 'vue';
 // }
 
 // Composition API
-const count = ref(0)
-function increment() {
-  count.value++;
-}
+// const count = ref(0)
+// function increment() {
+  // count.value++;
+// }
 
-onMounted(() => {
-  console.log(`The initial value is ${count.value}`);
+// onMounted(() => {
+  // console.log(`The initial value is ${count.value}`);
 
-}) 
+// }) 
   
 
 
 </script>
 
 <template>
-    <button @click="increment">
+    <!-- <button @click="increment">
       Count: {{ count }}
 
-    </button>
-
+    </button> -->
+<Test />
+<!-- <HelloWorld /> -->
 </template>
 
 <style scoped>
