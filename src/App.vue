@@ -2,6 +2,7 @@
 // import HelloWorld from './components/HelloWorld.vue';
 import InputFiledLifeCycleHook from './components/InputFiled&LifeCycleHook.vue';
 import OneCheckBoxRed from './components/OneCheckBoxRed.vue';
+import SmallForm from './components/SmallForm.vue';
 import Test from './components/Test.vue';
 
 export default {
@@ -9,7 +10,8 @@ export default {
   components: {
     Test,
     InputFiledLifeCycleHook,
-    OneCheckBoxRed
+    OneCheckBoxRed,
+    SmallForm
 // HelloWorld
 
   }
@@ -56,7 +58,8 @@ export default {
 
     </button> -->
 <!-- <Test /> -->
-<OneCheckBoxRed />
+<!-- <OneCheckBoxRed /> -->
+ <SmallForm />
 <!-- <HelloWorld /> -->
 </template>
 
