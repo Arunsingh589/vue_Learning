@@ -1,4 +1,6 @@
 <script>
+import { computed } from 'vue';
+
 export default {
 
         data: function() {
@@ -9,12 +11,24 @@ export default {
        
     },
 
+
+    // const now = computed(() => Date.now()),
+
     // computed: {
     //     date() {
     //         return new Date().toLocaleString()
 
     //     }
-       
+    // },
+    // computed: {
+    //     date: {
+    //         // get: function(){
+
+    //         // },
+    //         set: function(newValue) {
+    //               this.date = new Date(newValue).getTime()
+    //         }
+    //     }
     // },
 
 

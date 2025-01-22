@@ -1,11 +1,13 @@
 <script >
 // import HelloWorld from './components/HelloWorld.vue';
+import InputFiledLifeCycleHook from './components/InputFiled&LifeCycleHook.vue';
 import Test from './components/Test.vue';
 
 export default {
   name: "app",
   components: {
     Test,
+    InputFiledLifeCycleHook
 // HelloWorld
 
   }
@@ -51,7 +53,8 @@ export default {
       Count: {{ count }}
 
     </button> -->
-<Test />
+<!-- <Test /> -->
+<InputFiledLifeCycleHook />
 <!-- <HelloWorld /> -->
 </template>
 
