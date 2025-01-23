@@ -8,6 +8,8 @@ import CustomerDetailForm from './components/CustomerDetailForm.vue';
 // import CustomerDetailForm from './components/CustomerDetailForm.vue';
 import InputFiledLifeCycleHook from './components/InputFiled&LifeCycleHook.vue';
 import OneCheckBoxRed from './components/OneCheckBoxRed.vue';
+// import CCard from './components/Slots/C-card.vue';
+import Card from './components/Slots/Card.vue';
 import SmallForm from './components/SmallForm.vue';
 import Test from './components/Test.vue';
 
@@ -23,7 +25,9 @@ export default {
     Control,
     Timer,
     CustomerDetailForm,
-    BaseButton
+    BaseButton, 
+    Card
+    
   },
   data() {
     return {
@@ -53,7 +57,8 @@ export default {
 <!-- <Test /> -->
 <!-- <List /> -->
  <!-- <Control /> -->
-  <Timer />
+  <!-- <Timer /> -->
+   <Card />
 <!-- <OneCheckBoxRed /> -->
  <!-- <SmallForm /> -->
   
