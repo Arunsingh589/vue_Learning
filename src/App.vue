@@ -1,5 +1,11 @@
 <script >
 // import HelloWorld from './components/HelloWorld.vue';
+import BaseButton from './components/Base-Button.vue';
+import List from './components/BreakDownForm/List.vue';
+import Control from './components/CountDownTimer/Control.vue';
+import Timer from './components/CountDownTimer/Timer.vue';
+import CustomerDetailForm from './components/CustomerDetailForm.vue';
+// import CustomerDetailForm from './components/CustomerDetailForm.vue';
 import InputFiledLifeCycleHook from './components/InputFiled&LifeCycleHook.vue';
 import OneCheckBoxRed from './components/OneCheckBoxRed.vue';
 import SmallForm from './components/SmallForm.vue';
@@ -7,66 +13,68 @@ import Test from './components/Test.vue';
 
 export default {
   name: "app",
+  
   components: {
     Test,
     InputFiledLifeCycleHook,
     OneCheckBoxRed,
-    SmallForm
-// HelloWorld
-
-  }
+    SmallForm,
+    List,
+    Control,
+    Timer,
+    CustomerDetailForm,
+    BaseButton
+  },
+  data() {
+    return {
+      name: "John Doe", 
+    };
+  },
+  methods: {
+    showAlert() {
+      alert("This is an alert message!");
+    },
+    toggleName() {
+      this.name = this.name.split("").reverse().join(""); 
+      console.log(this.name);
+      
+    },
+  },
 }
-// import { onMounted, ref } from 'vue';
-
-// Options API
-// export default {
-//   data() {
-//     return {
-//     count: 0
-//     }
-//   },
-//   methods: {
-//     increment(){
-//       this.count++
-//     }
-//   },
-//   mounted(){
-//     console.log(`The initial count is ${this.count}`);
-    
-//   }
-
-// }
-
-// Composition API
-// const count = ref(0)
-// function increment() {
-  // count.value++;
-// }
-
-// onMounted(() => {
-  // console.log(`The initial value is ${count.value}`);
-
-// }) 
-  
 
 
 </script>
 
 <template>
-    <!-- <button @click="increment">
-      Count: {{ count }}
+  <div>
+    <h1>{{ name }}</h1>
+    
 
-    </button> -->
 <!-- <Test /> -->
+<!-- <List /> -->
+ <!-- <Control /> -->
+  <Timer />
 <!-- <OneCheckBoxRed /> -->
- <SmallForm />
+ <!-- <SmallForm /> -->
+  
 <!-- <HelloWorld /> -->
+ <!-- <CustomerDetailForm /> -->
+  <!-- <BaseButton 
+      text="Show Alert"
+      @click="showAlert" />
+  <br />
+  <BaseButton 
+      text="Toggle Name"
+      @click="toggleName" /> -->
+  </div>
+
 </template>
 
 <style scoped>
 p{
   color: black;
 }
+
 </style>
 
 

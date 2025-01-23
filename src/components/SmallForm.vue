@@ -23,7 +23,7 @@ export default {
         this.name = ""; 
       }
     },
-        deleteItem: function(index){
+        deleteItem: function(index) {
             this.data.splice(index, 1)
             console.log(this.data)
         },
@@ -32,8 +32,7 @@ export default {
       this.name = this.data[index]; 
       this.editIndex = index; 
     },
-       
-    }
+ }
 }
 </script>
 
@@ -52,12 +51,11 @@ export default {
         <ul>
             <li v-for="(item, index) in data" v-bind:key="index">
                 <span>{{ item }}</span>
-                <div class="button" >
+                <div class="button">
                     <button @click="editItem(index)">Edit</button>
                     <button  @click="deleteItem(index)">delete</button>
 
                 </div>
-           
         </li>
         </ul>
        
