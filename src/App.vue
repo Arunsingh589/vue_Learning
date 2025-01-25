@@ -61,10 +61,15 @@ export default {
 <template>
   <div>
     <h1>{{ name }}</h1>
-    
+    <nav>
+      <router-link to="/test" >Click</router-link>
+      <router-link to="/" ></router-link>
+
+    </nav>
+    <router-view></router-view>
 <!-- <Main /> -->
  <!-- <Header /> -->
-  <TodoApp />
+  <!-- <TodoApp /> -->
   <!-- <Body /> -->
 <!-- <Test /> -->
 <!-- <List /> -->
