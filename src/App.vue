@@ -16,6 +16,7 @@ import OneCheckBoxRed from './components/OneCheckBoxRed.vue';
 import Card from './components/Slots/Card.vue';
 import SmallForm from './components/SmallForm.vue';
 import Test from './components/Test.vue';
+import TodoApp from './components/TodoAppUsingPiniaStore/TodoApp.vue';
 
 export default {
   name: "app",
@@ -33,7 +34,8 @@ export default {
     Card,
     Main,
     Header,
-    Body
+    Body,
+    TodoApp
     
   },
   data() {
@@ -61,7 +63,8 @@ export default {
     <h1>{{ name }}</h1>
     
 <!-- <Main /> -->
- <Header />
+ <!-- <Header /> -->
+  <TodoApp />
   <!-- <Body /> -->
 <!-- <Test /> -->
 <!-- <List /> -->
